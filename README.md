@@ -17,7 +17,7 @@ XSS-Harvest is multi-threaded pre-forking web server written in Perl, and requir
 * Tested in IE6-9 (reflected XSS protection in IE9 will limit exploitation to stored XSS only in most cases), FF5, Chrome and various mobile browsers (Safari and Android). Please let me know your success with other browsers.
 * Overcomes browser oddities, such as Internet Explorer throttling requests to the same URL when exfiltrating keystrokes.
 
-## Dependancies
+## Dependencies
 Requires the following dependencies:
 HTTP::Server::Simple::CGI, Digest::MD5, Time::Local, Getopt::Std, Net::Server::PreFork
 
