@@ -294,7 +294,12 @@ __DATA__
 var body = document.getElementsByTagName("body")[0];
 
 if (redresspage !== undefined && ! document.getElementById("redressFrame")) {
-	document.write("<div id='redressDiv' style='height:100%;width:100%;position:absolute;top:0;right:0;left:0;bottom:0;margin:0;padding:0;background-color:white;'><iframe onload='sendPage()' frameBorder='0' id='redressFrame' width='100%' height='100%' src='" + redresspage + "'></iframe></div>");
+    var se1 = document.createElement('div');
+    se1.setAttribute('id', 'redressDiv');
+    se1.setAttribute('style', 'height:100%;width:100%;position:absolute;top:0;right:0;left:0;bottom:0;margin:0;padding:0;background-color:white;');
+    var inner = "<iframe onload='sendPage()' frameBorder='0' id='redressFrame' width='100%' height='100%' src='" + redresspage + "'></iframe>";
+    se1.innerHTML = inner; 
+    body.appendChild(se1);
 } else { 
 	addListeners(this.body);
 	var pageurl = escape(location.href);
