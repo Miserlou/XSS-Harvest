@@ -21,10 +21,17 @@ XSS-Harvest is multi-threaded pre-forking web server written in Perl, and requir
 Requires the following dependencies:
 HTTP::Server::Simple::CGI, Digest::MD5, Time::Local, Getopt::Std, Net::Server::PreFork
 
-sudo apt-get install libhttp-server-simple-perl
-sudo apt-get install libdigest-md5-file-perl
-sudo apt-get install libtime-local-perl
-sudo apt-get install libnet-server-perl
+### Ubuntu/Debian install
+
+    sudo apt-get install libhttp-server-simple-perl libdigest-md5-file-perl libtime-local-perl libnet-server-perl
+
+### OSX Install 
+
+    sudo cpan install HTTP::Server::Simple::CGI
+    sudo cpan install Digest::MD5
+    sudo cpan install Digest::Time::Local
+    sudo cpan install Getopt:Std
+    sudo cpan install Net::Server::Prefork
 
 ## Usage
 Start server (with redress:)
