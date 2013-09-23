@@ -33,6 +33,14 @@ HTTP::Server::Simple::CGI, Digest::MD5, Time::Local, Getopt::Std, Net::Server::P
     sudo cpan install Getopt:Std
     sudo cpan install Net::Server::Prefork
 
+## TODO
+
+* Hosted version?
+* urlEncoded Redress
+* Autominify/obfuscate
+* Database/dashboard
+* Payload generator
+
 ## Usage
 Start server (with redress:)
 
